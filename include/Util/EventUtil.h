@@ -4,7 +4,7 @@
 
 namespace MR
 {
-    u32 getPlayerLeft();
+    s32 getPlayerLeft();
 
     void addStarPiece(int);
 

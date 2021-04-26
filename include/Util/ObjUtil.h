@@ -8,8 +8,8 @@ class LiveActor;
 
 namespace MR
 {
-    void connectToScene(NameObj *, int, int, int, int);
-    void connectToScene(LiveActor *, int, int, int, int);
+    void connectToScene(NameObj *, s32, s32, s32, s32);
+    void connectToScene(LiveActor *, s32, s32, s32, s32);
     void connectToSceneMapObj(LiveActor *);
     void connectToSceneMapObjWeakLight(LiveActor *);
     void connectToSceneMapObjStrongLight(LiveActor *);
@@ -32,10 +32,10 @@ namespace MR
     void connectToSceneNpc(LiveActor *);
     void connectToSceneNpcMovement(LiveActor *);
 
-    void registerNameObjToExecuteHolder(NameObj *, int, int, int, int);
+    void registerNameObjToExecuteHolder(NameObj *, s32, s32, s32, s32);
     void tryRegisterNamePosLinkObj(const NameObj *, const JMapInfoIter &);
 
-    bool tryFindLinkNamePos(const NameObj *, const char, f32 *[4]);
+    bool tryFindLinkNamePos(const NameObj *, const char *, Mtx4 *);
 
     void getMapPartsObjectNameIfExistsShapeID();
 
