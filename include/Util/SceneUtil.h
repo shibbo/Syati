@@ -14,8 +14,8 @@ namespace MR
     s32 getPowerStarNum();    
 
     s32 getChildObjNum(const JMapInfoIter &);
-    void getChildObjName(const char**, const JMapInfoIter &, int);
-    void initChildObj(NameObj *, const JMapInfoIter &, int);
+    void getChildObjName(const char**, const JMapInfoIter &, s32);
+    void initChildObj(NameObj *, const JMapInfoIter &, s32);
 
     const char* getCurrentStageName();
 };
